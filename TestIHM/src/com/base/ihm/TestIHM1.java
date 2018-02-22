@@ -1,28 +1,22 @@
 package com.base.ihm;
 
-import javax.swing.JFrame;
+import com.ihm.panels.PanneauFillOval;
+import com.ihm.panels.PanneauImage;
+import com.ihm.windows.Fenetre2;
 
 public class TestIHM1 {
 
 	public static void main(String[] args) {
 
-		//Instanciation d'une fenêtre
-		JFrame fenetre = new JFrame();
-		
-		//Ajout d'un titre à la fenêtre
-		fenetre.setTitle("Ma première fenêtre JAVA");
-		
-		//Définition de ses dimensions (400 pixels de large x 100 pixels de haut
-		fenetre.setSize(400, 100);
-		
-		//Positionnement de la fenêtre au centre de l'écran
-		fenetre.setLocationRelativeTo(null);
-		
-		//Termine le processus quand on click sur la croix rouge
-		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		//Affiche la fenêtre à l'écran
-		fenetre.setVisible(true);
+		switch(2) {
+		case 1 : Fenetre2 fen1 = new Fenetre2(new PanneauFillOval());
+				break;
+		case 2 : Fenetre2 fen2 = new Fenetre2(new PanneauImage());
+				System.out.println("Cas 2");
+				break;
+		default : System.out.println("Cas default du switch");
+		}
+
 		
 	}
 
