@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 
 public class PanneauImage extends JPanel {
 	
-	public void PaintComponent(Graphics g) {
+	public void paintComponent(Graphics g) {
 		
 		try {
 			
@@ -23,11 +23,25 @@ public class PanneauImage extends JPanel {
 			
 			if(img == null) System.out.println("Pas de lecteur d'image trouvé");
 			
-			if(g.drawImage(img, 0, 0, this)) System.out.println("Image dessinée");
+			int x = img.getWidth(this)/2;
+			int y = img.getHeight(this)/2;
+			
+			int xj = this.getWidth();
+			int yj = this.getWidth();
+			
+			System.out.println("x img : " + x);
+			System.out.println("y img : " + y);
+			
+			System.out.println("x JPanel : " + xj);
+			System.out.println("y JPanel : " + yj);
+			
+			
+			if(g.drawImage(img, xj / 2 - x, yj / 2 - y, this)) System.out.println("Image dessinée");
 			else System.out.println("Image non dessinée");
 			
 		}
 		catch(IOException ioe) {
+			System.err.println("Erreur IO");
 			ioe.printStackTrace();
 		}
 		
