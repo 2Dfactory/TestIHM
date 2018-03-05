@@ -4,11 +4,11 @@ import javax.swing.JFrame;
 
 import com.ihm.panels.PanneauRondMove;
 
-public class Fenetre3 extends JFrame {
+public class FRondMove extends JFrame {
 
 	private PanneauRondMove pane;
 	
-	public Fenetre3(PanneauRondMove pane) {
+	public FRondMove(PanneauRondMove pane) {
 		
 		this.pane = pane;
 		
