@@ -10,7 +10,7 @@ public class PanneauRondMove extends JPanel{
 	private int posX = -50;
 	private int posY = -50;
 
-	public void paintComponents(Graphics g) {
+	public void paintComponent(Graphics g) {
 		
 		g.setColor(Color.RED);
 		g.fillOval(posX, posY, 50, 50);
