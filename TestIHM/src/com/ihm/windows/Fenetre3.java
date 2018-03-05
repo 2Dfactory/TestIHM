@@ -27,20 +27,31 @@ public class Fenetre3 extends JFrame {
 			
 			int x = pane.getPosX(), y = pane.getPosY();
 			
-			x++;
-			y++;
+			boolean backX = false, backY = false;
 			
-			pane.setPosX(x);
-			pane.setPosY(y);
-			pane.repaint();
-			
-			try {
-				Thread.sleep(10);
+			while(true) {
+				
+				if(x < 1) backX = false;
+				if(x > pane.getWidth() - 50) backX = true;
+				
+				if(y < 1) backY = false;
+				if(y > pane.getHeight() - 50) backY = true;
+				
+				if(!backX) pane.setPosX(++x);
+				else pane.setPosX(--x);
+				
+				if(!backY) pane.setPosY(++y);
+				else pane.setPosY(--y);
+				
+				pane.repaint();
+
+				try {
+					Thread.sleep(5);
+				}
+				catch(InterruptedException ie) {
+					ie.printStackTrace();
+				}
 			}
-			catch(InterruptedException ie) {
-				ie.printStackTrace();
-			}
-			
 		}
 		
 	}
