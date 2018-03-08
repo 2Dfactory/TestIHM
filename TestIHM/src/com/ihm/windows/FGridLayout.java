@@ -27,7 +27,7 @@ public class FGridLayout extends JFrame {
 		//Ajout d'un espacement de 5 pixels entre les lignes
 		gl.setVgap(5);
 				
-		this.setLayout(new GridLayout(3, 2));
+		this.setLayout(gl);
 		
 		//Ajout d'un bouton dans chaque case du GridLayout
 		if (true) this.getContentPane().add(new JButton("1"));
