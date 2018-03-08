@@ -6,6 +6,7 @@ import com.ihm.panels.PanneauRondMove;
 import com.ihm.windows.FLayoutBox;
 import com.ihm.windows.Fenetre2;
 import com.ihm.windows.FRondMove;
+import com.ihm.windows.FGridLayout;
 import com.ihm.windows.FJButton;
 import com.ihm.windows.FLayoutBorder;
 
@@ -13,7 +14,7 @@ public class TestIHM1 {
 
 	public static void main(String[] args) {
 
-		switch(6) {
+		switch(7) {
 		case 1 : Fenetre2 fen1 = new Fenetre2(new PanneauFillOval());
 				break;
 		case 2 : Fenetre2 fen2 = new Fenetre2(new PanneauImage());
@@ -29,9 +30,11 @@ public class TestIHM1 {
 				System.out.println("Utilisation du BoxLayout");
 				break;
 		case 6 : FLayoutBorder fen6 = new FLayoutBorder();
-			System.out.println("Utilisation du BorderLayout");
-			break;		
-				
+				System.out.println("Utilisation du BorderLayout");
+				break;		
+		case 7 : FGridLayout fen7 = new FGridLayout();
+				System.out.println("Utilisation du GridLayout");
+				break;				
 				
 		default : System.out.println("Cas default du switch");
 		}
