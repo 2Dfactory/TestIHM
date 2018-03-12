@@ -4,6 +4,7 @@ import com.ihm.panels.PanneauFillOval;
 import com.ihm.panels.PanneauImage;
 import com.ihm.panels.PanneauRondMove;
 import com.ihm.windows.FLayoutBox;
+import com.ihm.windows.FLayoutGridBag;
 import com.ihm.windows.Fenetre2;
 import com.ihm.windows.FRondMove;
 import com.ihm.windows.FCardLayout;
@@ -15,7 +16,7 @@ public class TestIHM1 {
 
 	public static void main(String[] args) {
 
-		switch(8) {
+		switch(9) {
 		case 1 : Fenetre2 fen1 = new Fenetre2(new PanneauFillOval());
 				break;
 		case 2 : Fenetre2 fen2 = new Fenetre2(new PanneauImage());
@@ -39,7 +40,9 @@ public class TestIHM1 {
 		case 8 : FCardLayout fen8 = new FCardLayout();
 				System.out.println("Utilisation du CardLayout");
 				break;			
-				
+		case 9 : FLayoutGridBag fen9 = new FLayoutGridBag();
+				System.out.println("Utilisation du GridBagLayout");
+				break;		
 				
 		default : System.out.println("Cas default du switch");
 		}

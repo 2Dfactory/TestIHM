@@ -71,16 +71,7 @@ public class FLayoutCard extends JFrame {
 		this.getContentPane().add(content, BorderLayout.CENTER);
 		
 		this.setVisible(true);
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
-		
 	
 }
