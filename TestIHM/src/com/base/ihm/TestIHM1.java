@@ -43,7 +43,6 @@ public class TestIHM1 {
 		case 9 : FLayoutGridBag fen9 = new FLayoutGridBag();
 				System.out.println("Utilisation du GridBagLayout");
 				break;		
-				
 		default : System.out.println("Cas default du switch");
 		}
 

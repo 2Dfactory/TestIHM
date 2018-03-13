@@ -22,27 +22,27 @@ public class FLayoutGridBag extends JFrame {
 		cell1.setPreferredSize(new Dimension(60,40));
 		
 		JPanel cell2 = new JPanel();
-		cell2.setBackground(Color.RED);
+		cell2.setBackground(Color.red);
 		cell2.setPreferredSize(new Dimension(60,40));
 		
 		JPanel cell3 = new JPanel();
-		cell3.setBackground(Color.GREEN);
+		cell3.setBackground(Color.green);
 		cell3.setPreferredSize(new Dimension(60,40));
 		
 		JPanel cell4 = new JPanel();
-		cell4.setBackground(Color.BLACK);
+		cell4.setBackground(Color.black);
 		cell4.setPreferredSize(new Dimension(60,40));
 		
 		JPanel cell5 = new JPanel();
-		cell4.setBackground(Color.CYAN);
-		cell4.setPreferredSize(new Dimension(60,40));
+		cell5.setBackground(Color.cyan);
+		cell5.setPreferredSize(new Dimension(60,40));
 		
 		JPanel cell6 = new JPanel();
 		cell6.setBackground(Color.BLUE);
 		cell6.setPreferredSize(new Dimension(60,40));
 		
 		JPanel cell7 = new JPanel();
-		cell7.setBackground(Color.ORANGE);
+		cell7.setBackground(Color.orange);
 		cell7.setPreferredSize(new Dimension(60,40));
 		
 		JPanel cell8 = new JPanel();
@@ -70,8 +70,8 @@ public class FLayoutGridBag extends JFrame {
 		gbc.gridx = 2;
 		content.add(cell3, gbc);
 		
-		gbc.gridx = 3;
 		gbc.gridwidth = GridBagConstraints.REMAINDER;
+		gbc.gridx = 3;
 		content.add(cell4, gbc);
 
 		gbc.gridx = 0;
