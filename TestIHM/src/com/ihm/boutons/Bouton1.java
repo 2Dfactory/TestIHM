@@ -7,12 +7,12 @@ import java.awt.Graphics2D;
 
 import javax.swing.JButton;
 
-public class Bouton extends JButton {
+public class Bouton1 extends JButton {
 
 	private String name;
 
-	public Bouton(String name) {
-		super();
+	public Bouton1(String name) {
+		super(name);
 		this.name = name;
 	}
 	
@@ -29,7 +29,6 @@ public class Bouton extends JButton {
 		g2d.setColor(Color.WHITE);
 		
 		g2d.drawString(this.name, this.getWidth()/2 - (this.getWidth()/2/4), (this.getHeight()/2) + 5);
-		
 		
 	}
 	

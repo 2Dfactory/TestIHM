@@ -6,13 +6,13 @@ import java.awt.Color;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import com.ihm.boutons.Bouton;
+import com.ihm.boutons.Bouton1;
 import com.ihm.panels.PanneauRondMove;
 
 public class Fenetre4 extends JFrame {
 
 	private PanneauRondMove panRM = new PanneauRondMove();
-	private Bouton bouton = new Bouton("Mon bouton");
+	private Bouton1 bouton = new Bouton1("Mon bouton");
 	private JPanel container = new JPanel();
 	
 	public Fenetre4() {

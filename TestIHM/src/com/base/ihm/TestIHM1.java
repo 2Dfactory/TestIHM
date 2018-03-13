@@ -52,7 +52,6 @@ public class TestIHM1 {
 				System.out.println("Fenêtre avec bouton modifié");
 				break;
 				
-				
 		default : System.out.println("Cas default du switch");
 		}
 
