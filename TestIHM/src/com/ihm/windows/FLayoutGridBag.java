@@ -70,10 +70,10 @@ public class FLayoutGridBag extends JFrame {
 		gbc.gridx = 2;
 		content.add(cell3, gbc);
 		
-		gbc.gridwidth = GridBagConstraints.REMAINDER;
 		gbc.gridx = 3;
+		gbc.gridwidth = GridBagConstraints.REMAINDER;
 		content.add(cell4, gbc);
-		
+
 		gbc.gridx = 0;
 		gbc.gridy = 1;
 		gbc.gridwidth = 1;
@@ -81,6 +81,7 @@ public class FLayoutGridBag extends JFrame {
 		
 		gbc.fill = GridBagConstraints.VERTICAL;
 		
+		gbc.gridheight = GridBagConstraints.REMAINDER;
 		content.add(cell5, gbc);
 		
 		gbc.gridx = 1;
