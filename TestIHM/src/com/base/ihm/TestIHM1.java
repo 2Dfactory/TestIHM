@@ -13,12 +13,13 @@ import com.ihm.windows.FRondMove;
 import com.ihm.windows.Fenetre2;
 import com.ihm.windows.Fenetre3;
 import com.ihm.windows.Fenetre4;
+import com.ihm.windows.Fenetre5;
 
 public class TestIHM1 {
 
 	public static void main(String[] args) {
 
-		switch(11) {
+		switch(12) {
 		case 1 : Fenetre2 fen1 = new Fenetre2(new PanneauFillOval());
 				break;
 		case 2 : Fenetre2 fen2 = new Fenetre2(new PanneauImage());
@@ -49,6 +50,9 @@ public class TestIHM1 {
 				System.out.println("Fenêtre move rond");
 				break;
 		case 11 : Fenetre4 fen11 = new Fenetre4();
+				System.out.println("Fenêtre avec bouton modifié");
+				break;
+		case 12 : Fenetre5 fen12 = new Fenetre5();
 				System.out.println("Fenêtre avec bouton modifié");
 				break;
 				
