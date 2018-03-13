@@ -3,21 +3,22 @@ package com.base.ihm;
 import com.ihm.panels.PanneauFillOval;
 import com.ihm.panels.PanneauImage;
 import com.ihm.panels.PanneauRondMove;
-import com.ihm.windows.FLayoutBox;
-import com.ihm.windows.FLayoutGridBag;
-import com.ihm.windows.Fenetre2;
-import com.ihm.windows.Fenetre3;
-import com.ihm.windows.FRondMove;
 import com.ihm.windows.FCardLayout;
 import com.ihm.windows.FGridLayout;
 import com.ihm.windows.FJButton;
 import com.ihm.windows.FLayoutBorder;
+import com.ihm.windows.FLayoutBox;
+import com.ihm.windows.FLayoutGridBag;
+import com.ihm.windows.FRondMove;
+import com.ihm.windows.Fenetre2;
+import com.ihm.windows.Fenetre3;
+import com.ihm.windows.Fenetre4;
 
 public class TestIHM1 {
 
 	public static void main(String[] args) {
 
-		switch(10) {
+		switch(11) {
 		case 1 : Fenetre2 fen1 = new Fenetre2(new PanneauFillOval());
 				break;
 		case 2 : Fenetre2 fen2 = new Fenetre2(new PanneauImage());
@@ -47,6 +48,10 @@ public class TestIHM1 {
 		case 10 : Fenetre3 fen10 = new Fenetre3();
 				System.out.println("Fenêtre move rond");
 				break;
+		case 11 : Fenetre4 fen11 = new Fenetre4();
+				System.out.println("Fenêtre avec bouton modifié");
+				break;
+				
 				
 		default : System.out.println("Cas default du switch");
 		}
