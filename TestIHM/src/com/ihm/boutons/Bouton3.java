@@ -90,11 +90,23 @@ public class Bouton3 extends JButton implements MouseListener{
 	@Override
 	public void mouseReleased(MouseEvent e) {
 		
-		try {
-			img = ImageIO.read(new File("./fondBoutonO.png"));
+		if((e.getY()>0 && e.getY() < this.getHeight()) && (e.getX()>0 && e.getX() < this.getWidth())) {
+			
+			try {
+				img = ImageIO.read(new File("./fondBoutonO.png"));
+			}
+			catch (IOException ioe) {
+				ioe.printStackTrace();
+			}
+			
 		}
-		catch (IOException ioe) {
-			ioe.printStackTrace();
+		else {
+			try {
+				img = ImageIO.read(new File("./fondBouton.png"));
+			}
+			catch (IOException ioe) {
+				ioe.printStackTrace();
+			}
 		}
 		
 	}
