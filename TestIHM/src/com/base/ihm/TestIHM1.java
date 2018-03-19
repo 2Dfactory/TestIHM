@@ -17,12 +17,13 @@ import com.ihm.windows.Fenetre5;
 import com.ihm.windows.Fenetre6;
 import com.ihm.windows.Fenetre7;
 import com.ihm.windows.Fenetre8;
+import com.ihm.windows.Fenetre9;
 
 public class TestIHM1 {
 
 	public static void main(String[] args) {
 
-		switch(15) {
+		switch(16) {
 		case 1 : Fenetre2 fen1 = new Fenetre2(new PanneauFillOval());
 				break;
 		case 2 : Fenetre2 fen2 = new Fenetre2(new PanneauImage());
@@ -66,6 +67,9 @@ public class TestIHM1 {
 				break;
 		case 15 : Fenetre8 fen15 = new Fenetre8();
 				System.out.println("Fenêtre avec 2 bouton");
+				break;
+		case 16 : Fenetre9 fen16 = new Fenetre9();
+				System.out.println("Fenêtre avec arrêt animation");
 				break;
 				
 		default : System.out.println("Cas default du switch");
