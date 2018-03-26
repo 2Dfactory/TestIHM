@@ -11,7 +11,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import com.ihm.boutons.Bouton3;
 import com.ihm.panels.PanneauRondMove;
 
 public class Fenetre9 extends JFrame{
@@ -25,6 +24,7 @@ public class Fenetre9 extends JFrame{
 	private int x, y;
 	private boolean backX, backY;
 	private boolean animated = true;
+	private Thread t;
 	
 	public Fenetre9() {
 		
@@ -96,9 +96,11 @@ public class Fenetre9 extends JFrame{
 			
 			label.setText("Animation lancée");
 			animated = true;
+			t = new Thread(new PlayAnimation());
+			t.start();
 			bouton.setEnabled(false);
 			bouton2.setEnabled(true);
-			go();
+			//go();
 			
 		}
 		
@@ -114,6 +116,14 @@ public class Fenetre9 extends JFrame{
 			bouton.setEnabled(true);
 			bouton2.setEnabled(false);		
 			
+		}
+		
+	}
+	
+	class PlayAnimation implements Runnable {
+		
+		public void run() {
+			go();
 		}
 		
 	}
